@@ -84,7 +84,7 @@
     <div class="container">
         <a href="index.html" class="nav-back">← Back to Legal & Support Portal</a>
         <h1>🔒 Privacy Policy</h1>
-        <div class="effective-date"><strong>Effective Date:</strong> September 12, 2026 | <strong>Last Updated:</strong> September 12, 2026<br>The gameplay analytics described in this policy apply from version 1.0.0 build 58 onward.</div>
+        <div class="effective-date"><strong>Effective Date:</strong> September 12, 2026 | <strong>Last Updated:</strong> October 27, 2026<br>From version 1.2.2, gameplay analytics and crash reporting are provided by Google Analytics for Firebase and Firebase Crashlytics, replacing GameAnalytics.</div>
 
         <div class="section">
             <p>Thank you for playing <strong>Kumpir Legend</strong> ("the Game", "we", "us", or "our"). We are committed to safeguarding your privacy. This Privacy Policy explains how information is handled when you download, install, and play Kumpir Legend on iOS and Android devices.</p>
@@ -96,7 +96,7 @@
                 <li>We <strong>do not</strong> require user registration or account creation to play.</li>
                 <li>We <strong>do not</strong> collect, store, or have access to personal information such as your name, email address, phone number, physical address, contacts, or precise geolocation.</li>
                 <li>All game progression, coins, upgrades, and scores are stored <strong>strictly locally on your device</strong> (and within your private device backups if enabled by your operating system).</li>
-                <li>We collect <strong>anonymous gameplay analytics</strong>: a randomly generated install identifier, session information, the device's operating system version, and in-game events such as days completed, upgrades purchased, and ads watched. This identifier is not linked to you, your Apple ID, or your device's advertising identifier, and cannot be used to contact you.</li>
+                <li>We collect <strong>pseudonymous gameplay analytics and crash reports</strong>: an app-instance identifier assigned by Firebase, session information, device and operating-system details, an approximate location derived from your masked IP address, in-game events (such as days played, upgrades bought, and ads watched), in-app purchases, and, if the game crashes, technical crash information. This identifier is not linked to you, your Apple ID, your device's advertising identifier (IDFA) or its vendor identifier (IDFV), and cannot be used to contact you.</li>
             </ul>
         </div>
 
@@ -119,14 +119,15 @@
                 <li>Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
             </ul>
 
-            <h3>C. GameAnalytics (Gameplay Analytics)</h3>
+            <h3>C. Google Analytics for Firebase &amp; Firebase Crashlytics (Analytics &amp; Stability)</h3>
             <ul>
-                <li>We use GameAnalytics to understand gameplay progression, balance game economics, and improve overall stability.</li>
-                <li><strong>Data Processed:</strong> A random UUID generated on first launch and stored in your local save file (not tied to any account, Apple ID, IDFA, or IDFV), a per-session random ID and session counter, platform (<code>ios</code>), operating system version, manufacturer (<code>apple</code>), and in-game events (days completed, earnings, customers served and lost, upgrades bought, goals claimed, ads shown, and purchases completed).</li>
-                <li><strong>What Is Not Collected:</strong> We do not collect or transmit your device model, advertising identifier (IDFA), contacts, location, or anything you type in the game.</li>
-                <li><strong>IP Address & Approximate Location:</strong> GameAnalytics receives the request's IP address on their servers to deliver the network request and derives an approximate country from it, as any HTTP API does.</li>
-                <li><strong>Consent-Gated Queue:</strong> Gameplay events are held in a local queue and never transmitted until the consent dialog has been answered. If consent is refused, the queue is discarded and no analytics data is transmitted.</li>
-                <li>GameAnalytics Privacy Policy: <a href="https://gameanalytics.com/privacy" target="_blank" rel="noopener">https://gameanalytics.com/privacy</a></li>
+                <li>We use Google Analytics for Firebase to understand how the game is played (for example, where new players stop, which features are used, and how far players progress) so we can improve it, and Firebase Crashlytics to find and fix crashes.</li>
+                <li><strong>Data Processed by Analytics:</strong> an app-instance identifier that Firebase assigns to this installation of the game; app lifecycle and session events (such as first open, session start, and engagement time); device model, operating system and app version, language and region settings; an approximate location (country/region) that Google derives from your masked IP address. Apple's Location Services are never used. Also in-game events (such as days started and completed, tutorial progress, upgrades and cosmetics bought, goals claimed, ad offers shown and watched), and in-app purchases measured through Apple's StoreKit (product, name and price).</li>
+                <li><strong>Data Processed by Crashlytics:</strong> if the game crashes or hits a serious error, the stack trace and the app's state at that moment, device and operating-system information, and short technical notes the game records to help us reproduce the problem (such as the last in-game action). It never includes anything you type.</li>
+                <li><strong>What Is Not Collected:</strong> we do not collect your name, email, contacts, precise location, or anything you type. Firebase in this game does <strong>not</strong> collect your advertising identifier (IDFA) or identifier for vendor (IDFV), we do not set a user ID, and we have not enabled Google signals or Analytics data sharing with other Google products.</li>
+                <li><strong>Consent:</strong> nothing is sent until the consent dialog has been answered (where shown). If you refuse consent, or do not consent to storing and accessing information on your device, analytics and crash reporting stay off and the pending events are discarded. Analytics uses Google Consent Mode, so the consent choices you make in the dialog are passed on to Google.</li>
+                <li><strong>Retention:</strong> Google Analytics keeps event-level data for the retention period configured for our project, and Crashlytics keeps crash reports for up to 90 days. We may keep a private copy of exported, pseudonymous analytics data to analyse long-term trends.</li>
+                <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> · Firebase privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
             </ul>
         </div>
 
